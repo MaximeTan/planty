@@ -1,0 +1,327 @@
+/*
+Theme Name: BlankSlate Child
+Theme URI: https://github.com/tidythemes/blankslate
+Template: blankslate
+Author: TidyThemes
+Author URI: https://github.com/tidythemes
+Description: Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Tags: accessibility-ready,one-column,two-columns,custom-menu,featured-images,microformats,sticky-post,threaded-comments,translation-ready
+Version: 2023.1689402455
+Updated: 2023-07-15 08:27:35
+
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+}
+:root {
+    /* Font-size */
+  
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-22: 1.375rem;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-38: 2.375rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+}
+body {
+    width: 100%;
+    margin: 0 auto; 
+    font-size: var(--fs-20);
+}
+/* font-size */
+h1 {
+    font-size: var(--fs-38);
+    font-weight: 800!important;
+}
+h2 {
+    font-size: var(--fs-30);
+    font-weight: 800!important ;
+}
+
+h3 {
+    font-size: var(--fs-24);
+    font-weight: 700!important
+}
+
+p {
+    font-size: var(--fs-20);
+}
+
+/*  */
+#footer {
+    display: none;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0;
+}
+
+#menu-item-48 {
+	background-color: #DC9F96;
+    order: 3;
+    min-width: 200px;
+}
+#menu-item-48 a {
+	color: #FFFFFF;
+}
+#menu-item-48 a:hover {
+	background-color: #C02E44;
+}
+
+#menu-item-47 a {
+    order: 2;
+    min-width: 200px;
+}
+#menu-item-49 a {
+    order: 1;
+    min-width: 200px;
+}
+
+.wpforms-submit-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wpforms-submit-container button {
+	background-color: #E0B9B4!important;
+}
+.wpforms-submit-container button:hover {
+	background-color: #C02E44!important;
+}
+#wrap #content-wrap {
+	padding: 0; 
+}
+
+
+#menu-item-47 a:hover, #menu-item-49 a:hover {
+    font-weight: 700;
+    font-size: 14px;
+    transform: translate(10px, -1px);
+}
+
+.wpforms-field-container label {
+    font-family: 'Syne', sans-serif;
+    
+}
+
+/* page commmander */
+.commerce {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+}
+.input-number {
+    max-width: 50px;
+    height: 56px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 4px 14px 0px #0000000A;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.boutons-plus-moins {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.bouton-plus-moins {
+    height: 100% ;
+    width: 50px;
+    color: #FFFFFF;
+    background-color: #DC9F96;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bouton-plus-moins:first-child {
+    border-bottom: 1px solid #FFFFFF; 
+    border-bottom-right-radius: 0;
+}
+.bouton-plus-moins:last-child {
+    border-top: 1px solid #FFFFFF; 
+    border-top-right-radius: 0;
+}
+#bouton-commander:hover {
+    background-color: #C02E44;
+}
+/* page commander / section formulaire */
+
+.formulaire-livraison .wpforms-field-container label {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+#wpforms-861-field_6-container, 
+#wpforms-861-field_9-container,
+#wpforms-861-field_11-container {
+    padding-left : 20px; 
+    border-left: solid 1px #FFFFFF;
+}
+.elementor-element-4de02bc {
+    margin-left: 20px ;
+    border-left: solid 1px #FFFFFF;   
+}
+
+#wpforms-861 {
+    margin-top: 0px
+}
+
+
+
+@media (max-width: 1200px){
+    #menu-item-48 {
+        min-width: 150px;
+    }
+    #menu-item-47 a {
+        min-width: 150px;
+    }
+    #menu-item-49 a {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* fontsize */
+   h1 {
+       font-size: var(--fs-30);
+   }
+   h2 {
+       font-size: var(--fs-24);
+   }
+   
+   h3 {
+       font-size: var(--fs-20);
+   }
+   
+   p {
+       font-size: var(--fs-16);
+   }
+    
+    /* header */
+    #menu-item-48 {
+        min-width: 110px;
+    }
+    #menu-item-47 a {
+        min-width: 110px;
+    }
+    #menu-item-49 a {
+        min-width: 110px;
+    }
+    #menu-item-47 a:hover, #menu-item-49 a:hover {
+        transform: none;
+    }
+    .elementor-element-4de02bc {
+        /* margin-left: 20px ; */
+        border-left: none;
+    }
+    .elementor-element-4de02bc {
+        margin-left: 0 ;   
+    }
+    
+}
+@media (max-width: 768px) {
+    
+    #menu-item-48 a {
+        color: black;
+    }
+    #menu-item-48 a:hover {
+        color: black;
+    }
+    #menu-item-47 a:hover, #menu-item-49 a:hover {
+        font-weight: 700;
+        font-size: 16px;
+        transform: none;
+    }
+    
+}
+/* responsive mobile */
+@media (max-width: 600px) {
+    /* fontsize */
+    
+    h1 {
+        font-size: var(--fs-24);
+    }
+    h2 {
+        font-size: var(--fs-22);
+    }
+    
+    h3 {
+        font-size: var(--fs-18);
+    }
+    
+    p {
+        font-size: var(--fs-16);
+    }
+    /* header */
+    #menu-item-47 a:hover, #menu-item-49 a:hover {
+        font-weight: 700;
+        font-size: 16px;
+        transform: none;
+    }
+    #menu-item-48 a {
+        color: black;
+    }
+    #menu-item-48 a:hover {
+        color: black;
+    }
+    #menu-item-48 {
+        background-color: #DC9F96;
+        order: 3;
+        min-width: 200px;
+    }
+    #menu-item-47 a {
+        order: 2;
+        min-width: 200px;
+    }
+    #menu-item-49 a {
+        order: 1;
+        min-width: 200px;
+    }
+    
+    .formulaire-livraison .wpforms-field-container label {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: var(--fs-16)
+}
+}
+@media (max-width: 321px) {
+    /* font-size */
+    
+    h1 {
+        font-size: var(--fs-22);
+    }
+    h2 {
+        font-size: var(--fs-20);
+    }
+    
+    h3 {
+        font-size: var(--fs-16);
+    }
+    
+    p {
+        font-size: var(--fs-12);
+    }
+    
+}
+    
+    
